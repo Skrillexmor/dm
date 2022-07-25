@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AnalogClock
+            android:id="@+id/analogClock"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Hello World!"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/analogClock" />
+
+        <DigitalClock
+            android:id="@+id/digitalClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/sansita"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/digitalClock">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Call_Calculator"
+                android:layout_width="125dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/main"
+                android:fontFamily="@font/open_sans_bold"
+                android:gravity="center"
+                android:text="@string/calculator"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Call_TestApp"
+                android:layout_width="125dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10sp"
+                android:backgroundTint="@color/main"
+                android:fontFamily="@font/open_sans_bold"
+                android:gravity="center"
+                android:onClick="taskApp"
+                android:text="@string/taskapp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout1">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Call_DarkMode"
+                android:layout_width="125dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/main"
+                android:fontFamily="@font/open_sans_bold"
+                android:gravity="center"
+                android:onClick="DarkMode"
+                android:text="@string/Darkmodename"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Call_Reg"
+                android:layout_width="125dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10sp"
+                android:backgroundTint="@color/main"
+                android:fontFamily="@font/open_sans_bold"
+                android:gravity="center"
+                android:onClick="Registration"
+                android:text="@string/reg"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Call_tt1"
+                android:layout_width="125dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/main"
+                android:fontFamily="@font/open_sans_bold"
+                android:gravity="center"
+                android:onClick="tutorial_1"
+                android:text="@string/tt1_name"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Call_tt2"
+                android:layout_width="125dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10sp"
+                android:backgroundTint="@color/main"
+                android:fontFamily="@font/open_sans_bold"
+                android:gravity="center"
+                android:onClick="tutorial_2"
+                android:text="@string/tt2_name"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Call_tt3"
+                android:layout_width="125dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/main"
+                android:fontFamily="@font/open_sans_bold"
+                android:gravity="center"
+                android:onClick="tutorial_3"
+                android:text="@string/tt3_name"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
+
+            <!--<com.google.android.material.button.MaterialButton
+                android:id="@+id/Call_tt3"
+                android:layout_width="125dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10sp"
+                android:backgroundTint="@color/main"
+                android:fontFamily="@font/open_sans_bold"
+                android:gravity="center"
+                android:onClick="tutorial_3"
+                android:text="@string/tt3_name"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />-->
+
+        </LinearLayout>
+
+        <!--<com.google.android.material.button.MaterialButton
+            android:layout_width="125dp"
+            android:layout_height="60sp"
+            android:backgroundTint="@color/main"
+            android:fontFamily="@font/open_sans_bold"
+            android:gravity="center"
+            android:onClick="Registration"
+            android:text="@string/gender_other"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
