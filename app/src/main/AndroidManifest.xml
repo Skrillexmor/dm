@@ -20,7 +20,7 @@
             android:name=".TutorialActivity1"
             android:exported="false"
             android:label="Hello RKU"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".TutorialActivity3Output"
             android:exported="false"
@@ -57,7 +57,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
