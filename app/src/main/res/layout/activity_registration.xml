@@ -159,12 +159,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:text="@string/gender_reg"
-            android:padding="20dp"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/gender_label"
             tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/materialCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/terms"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switchMaterial" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/createUserButton"
@@ -180,7 +192,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/switchMaterial" />
+            app:layout_constraintTop_toBottomOf="@+id/materialCheckBox" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

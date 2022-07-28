@@ -33,6 +33,7 @@
     <string name="civil">Civil</string>
     <string name="gender_male">Male</string>
     <string name="gender_reg">Male / Female</string>
+    <string name="terms">By accepting this you agree to our T and C.</string>
     <string name="gender_female">Female</string>
     <string name="gender_other">Other</string>
     <string name="submit">Submit</string>
