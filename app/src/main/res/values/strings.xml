@@ -22,9 +22,10 @@
     <string name="edit_hint">Enter Something :</string>
     <string name="enter_user">Enter User :</string>
     <string name="enter_username">Enter Username :</string>
-    <string name="reg_enter_email">Enter Email :</string>
-    <string name="reg_enter_passw">Enter Password :</string>
+    <string name="reg_enter_username">Enter Username</string>
+    <string name="reg_enter_passw">Enter Password</string>
     <string name="gender">Gender</string>
+    <string name="quali">Qualification</string>
     <string name="branch_reg">Branch</string>
     <string name="CE">CE</string>
     <string name="IT">IT</string>
@@ -61,4 +62,11 @@
     <string name="double_zero">00</string>
     <string name="dot">.</string>
     <string name="equal">=</string>
+    <string-array name="quali_arr">
+        <item>10th</item>
+        <item>12th</item>
+        <item>Bachelor</item>
+        <item>Masters</item>
+        <item>Phd</item>
+    </string-array>
 </resources>

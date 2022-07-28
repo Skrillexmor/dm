@@ -19,6 +19,7 @@
         <entry key="..\:/Users/vivek/AndroidStudioProjects/App06_29/app/src/main/res/drawable/logo.xml" value="0.1945" />
         <entry key="..\:/Users/vivek/AndroidStudioProjects/App06_29/app/src/main/res/drawable/new_but.xml" value="0.1935" />
         <entry key="..\:/Users/vivek/AndroidStudioProjects/App06_29/app/src/main/res/drawable/sp_btn.xml" value="0.1935" />
+        <entry key="..\:/Users/vivek/AndroidStudioProjects/App06_29/app/src/main/res/drawable/switch_custom.xml" value="0.1935" />
         <entry key="..\:/Users/vivek/AndroidStudioProjects/App06_29/app/src/main/res/layout/activity_calculator_screen.xml" value="0.22" />
         <entry key="..\:/Users/vivek/AndroidStudioProjects/App06_29/app/src/main/res/layout/activity_dark_mode.xml" value="0.3532440782698249" />
         <entry key="..\:/Users/vivek/AndroidStudioProjects/App06_29/app/src/main/res/layout/activity_display_text.xml" value="0.18645833333333334" />
@@ -32,6 +33,7 @@
         <entry key="..\:/Users/vivek/AndroidStudioProjects/App06_29/app/src/main/res/layout/activity_tutorial_activity3_output.xml" value="0.44430051813471505" />
         <entry key="..\:/Users/vivek/AndroidStudioProjects/App06_29/app/src/main/res/menu/options.xml" value="0.5" />
         <entry key="..\:/Users/vivek/AndroidStudioProjects/App06_29/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1945" />
+        <entry key="..\:/Users/vivek/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_dropdown_item.xml" value="0.152991452991453" />
       </map>
     </option>
   </component>
