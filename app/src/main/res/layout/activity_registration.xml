@@ -142,19 +142,34 @@
 
         </RadioGroup>
 
-        <com.google.android.material.switchmaterial.SwitchMaterial
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/gender_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/gender_reg"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/gender"
+            android:textColor="@color/black"
+            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radio_group_reg" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchMaterial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text="@string/gender_reg"
+            android:padding="20dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gender_label"
             tools:ignore="MissingConstraints" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/createUserButton"
             android:layout_width="125dp"
             android:layout_height="60dp"
-            android:layout_marginTop="10dp"
             android:backgroundTint="@color/main"
             android:fontFamily="@font/open_sans_bold"
             android:gravity="center"
@@ -163,10 +178,9 @@
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radio_group_reg" />
+            app:layout_constraintTop_toBottomOf="@+id/switchMaterial" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
