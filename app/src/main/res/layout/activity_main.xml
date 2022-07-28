@@ -123,7 +123,7 @@
                 android:fontFamily="@font/open_sans_bold"
                 android:gravity="center"
                 android:onClick="Registration"
-                android:text="@string/reg"
+                android:text="@string/sign_up"
                 android:textAllCaps="true"
                 android:textColor="@color/white"
                 android:textSize="15sp"
@@ -199,20 +199,20 @@
                 android:textStyle="bold"
                 tools:ignore="ButtonStyle" />
 
-            <!--<com.google.android.material.button.MaterialButton
-                android:id="@+id/Call_tt3"
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Call_tt4"
                 android:layout_width="125dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10sp"
                 android:backgroundTint="@color/main"
                 android:fontFamily="@font/open_sans_bold"
                 android:gravity="center"
-                android:onClick="tutorial_3"
-                android:text="@string/tt3_name"
+                android:onClick="tutorial_4"
+                android:text="@string/tt4_name"
                 android:textAllCaps="true"
                 android:textColor="@color/white"
                 android:textSize="15sp"
-                android:textStyle="bold" />-->
+                android:textStyle="bold" />
 
         </LinearLayout>
 

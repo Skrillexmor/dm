@@ -9,8 +9,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:padding="10dp"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="10dp">
 
         <!--  <com.google.android.material.textview.MaterialTextView
               android:id="@+id/reglabel"
@@ -174,10 +174,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="35dp"
             android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/gender_reg"
             android:textOff="@string/gender_male"
             android:textOn="@string/gender_female"
-            android:text="@string/gender_reg"
-            android:paddingBottom="10dp"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/gender_label"

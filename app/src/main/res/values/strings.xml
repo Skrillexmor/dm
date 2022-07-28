@@ -6,11 +6,13 @@
     <string name="Light">Light Mode</string>
     <string name="taskapp">Task App</string>
     <string name="Login">Login</string>
+    <string name="tt4_splash">Tutorial 4</string>
     <string name="Dark">Dark Mode</string>
     <string name="Darkmodename">Theme\'s App</string>
     <string name="tt1_name">Tutorial 1</string>
     <string name="tt2_name">Tutorial 2</string>
     <string name="tt3_name">Tutorial 3</string>
+    <string name="tt4_name">Tutorial 4</string>
     <string name="tt3_edit1_placeholder_name">Enter Username</string>
     <string name="tt3_edit2_placeholder_name">Enter Password</string>
     <string name="displaytext">Display Text</string>
@@ -39,7 +41,6 @@
     <string name="gender_other">Other</string>
     <string name="submit">Submit</string>
     <string name="create">Create</string>
-    <string name="reg">Registration</string>
     <string name="sign_up">Sign Up</string>
     <string name="signup">Sign Up</string>
     <string name="clear">AC</string>
@@ -57,6 +58,10 @@
     <string name="six">6</string>
     <string name="seven">7</string>
     <string name="eight">8</string>
+    <string name="tt4_email">Email : </string>
+    <string name="tt4_label_email">Try Email : admin@gmail.com</string>
+    <string name="tt4_pass">Password : </string>
+    <string name="tt4_label_pass">Try Password : admin</string>
     <string name="nine">9</string>
     <string name="zero">0</string>
     <string name="double_zero">00</string>
@@ -69,4 +74,12 @@
         <item>Masters</item>
         <item>Phd</item>
     </string-array>
+    <string name="title_activity_tutorial4">TutorialActivity4</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 </resources>
