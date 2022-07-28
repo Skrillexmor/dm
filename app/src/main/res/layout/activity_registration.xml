@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/reglabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,100 +33,140 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:padding="16dp"
+            android:textColorHint="@color/black"
             app:boxStrokeColor="@color/black"
             app:boxStrokeWidthFocused="2dp"
             app:endIconMode="clear_text"
             app:endIconTint="@color/black"
             app:hintTextColor="@color/black"
-            app:layout_constraintTop_toBottomOf="@+id/reglabel">
+            app:layout_constraintTop_toBottomOf="@+id/reglabel"
+            app:startIconDrawable="@drawable/ic_baseline_person"
+            app:startIconTint="@color/black"
+            tools:ignore="MissingConstraints">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/username_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="@string/enter_username"
+                android:hint="@string/reg_enter_email"
                 android:inputType="text"
                 android:textColor="@color/black"
                 android:textColorHint="@color/light_black" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/email"
+            android:id="@+id/pass_reg"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="50dp"
-            android:paddingEnd="16dp"
             android:paddingStart="16dp"
+            android:paddingEnd="16dp"
             android:paddingBottom="16dp"
+            android:textColorHint="@color/black"
             app:boxStrokeColor="@color/black"
             app:boxStrokeWidthFocused="2dp"
-            app:endIconMode="clear_text"
+            app:endIconMode="password_toggle"
             app:endIconTint="@color/black"
             app:hintTextColor="@color/black"
-            app:layout_constraintTop_toBottomOf="@+id/user_name">
+            app:layout_constraintTop_toBottomOf="@+id/user_name"
+            app:startIconDrawable="@drawable/ic_baseline_lock"
+            app:startIconTint="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/email_text"
+                android:id="@+id/pass_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="@string/enter_email"
+                android:hint="@string/reg_enter_passw"
                 android:inputType="text"
                 android:textColor="@color/black"
                 android:textColorHint="@color/light_black" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
-            android:id="@+id/gender_label"
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/branch_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:fontFamily="@font/open_sans_bold"
-            android:text="@string/gender"
+            android:text="@string/branch_reg"
             android:textColor="@color/black"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/email" />
+            app:layout_constraintTop_toBottomOf="@+id/pass_reg" />
 
         <RadioGroup
-            android:id="@+id/radio_group"
+            android:id="@+id/radio_group_reg"
             android:layout_width="wrap_content"
-            android:orientation="horizontal"
             android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="25dp"
+            android:orientation="vertical"
+            android:padding="8dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/gender_label">
+            app:layout_constraintTop_toBottomOf="@+id/branch_label">
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/ce_radio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/gender_male" />
+                android:text="@string/CE"
+                android:textSize="16sp" />
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/it_radio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/gender_female" />
+                android:text="@string/IT"
+                android:textSize="16sp" />
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/mec_radio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/gender_other" />
+                android:text="@string/MEC"
+                android:textSize="16sp" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/ele_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ELE"
+                android:textSize="16sp" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/civil_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/civil"
+                android:textSize="16sp" />
 
         </RadioGroup>
 
-        <Button
-            android:id="@+id/createUserButton"
+        <com.google.android.material.switchmaterial.SwitchMaterial
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/custom_btn"
+            android:text="@string/gender_reg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/createUserButton"
+            android:layout_width="125dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/main"
             android:fontFamily="@font/open_sans_bold"
-            android:text="@string/create"
+            android:gravity="center"
+            android:text="@string/sign_up"
+            android:textAllCaps="true"
             android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radio_group" />
+            app:layout_constraintTop_toBottomOf="@+id/radio_group_reg" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

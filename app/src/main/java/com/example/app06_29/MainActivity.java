@@ -1,5 +1,6 @@
 package com.example.app06_29;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -9,6 +10,8 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -146,6 +149,29 @@ public class MainActivity extends AppCompatActivity {
         }
 
         mBackPressed = System.currentTimeMillis();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.options, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        Toast.makeText(this, item.getTitle() + "Selected", Toast.LENGTH_SHORT).show();
+        switch (item.getItemId()) {
+            case R.id.home_menu:
+                startActivity(new Intent(this, MainActivity.class));
+                return true;
+            case R.id.help:
+                //
+                return true;
+            case R.id.call:
+                //
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     public void tutorial_1(View view) {
