@@ -74,6 +74,28 @@
         <item>Masters</item>
         <item>Phd</item>
     </string-array>
+
+    <!-- tt5 Values -->
+    <string-array name="tt5_city_array">
+        <item>Ahemdabad</item>
+        <item>Baroda</item>
+        <item>Jamnagar</item>
+        <item>Rajkot</item>
+    </string-array>
+
+    <string name="tt5_fname">First Name</string>
+    <string name="tt5_lname">Last Name</string>
+    <string name="tt5_email">Email</string>
+    <string name="tt5_pass">Password</string>
+    <string name="tt5_gender_label">Gender</string>
+    <string name="tt5_gender_male">Male</string>
+    <string name="tt5_gender_female">Female</string>
+    <string name="tt5_branch_label">Branch</string>
+    <string name="tt5_branch_desc">CE / IT</string>
+    <string name="tt5_city">City</string>
+    <string name="tt5_status_label">Status</string>
+    <string name="tt5_status_desc">Active / Inactive</string>
+
     <string name="title_activity_tutorial4">TutorialActivity4</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
