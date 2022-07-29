@@ -37,28 +37,25 @@ public class TutorialActivity4 extends AppCompatActivity {
         uname = findViewById(R.id.tt4_uname_label);
         pass = findViewById(R.id.tt4_pass_label);
 
-        btn_login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String s = user_txt.getText().toString();
-                String s1 = pass_txt.getText().toString();
-                if (!validateUserNameData()) {
-                    return;
-                }
-                if (!validatePasswordData()) {
-                    return;
-                }
-                if (s.equals("admin@gmail.com") && s1.equals("admin")) {
-                    Intent i = new Intent(getApplicationContext(), TutorialActivity4Output.class);
-                    Bundle b = new Bundle();
-                    b.putString("tt4_username_get", s);
-                    b.putString("tt4_password_get", s1);
-                    i.putExtras(b);
-                    i.putExtras(b);
-                    startActivity(i);
-                } else {
-                    Toast.makeText(TutorialActivity4.this, "Email or Password are wrong", Toast.LENGTH_LONG).show();
-                }
+        btn_login.setOnClickListener(view -> {
+            String s = user_txt.getText().toString();
+            String s1 = pass_txt.getText().toString();
+            if (!validateUserNameData()) {
+                return;
+            }
+            if (!validatePasswordData()) {
+                return;
+            }
+            if (s.equals("admin@gmail.com") && s1.equals("admin")) {
+                Intent i = new Intent(getApplicationContext(), TutorialActivity4Output.class);
+                Bundle b = new Bundle();
+                b.putString("tt4_username_get", s);
+                b.putString("tt4_password_get", s1);
+                i.putExtras(b);
+                i.putExtras(b);
+                startActivity(i);
+            } else {
+                Toast.makeText(TutorialActivity4.this, "Email or Password are wrong", Toast.LENGTH_LONG).show();
             }
         });
     }

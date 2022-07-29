@@ -13,6 +13,7 @@
     <string name="tt2_name">Tutorial 2</string>
     <string name="tt3_name">Tutorial 3</string>
     <string name="tt4_name">Tutorial 4</string>
+    <string name="tt5_name">Tutorial 5</string>
     <string name="tt3_edit1_placeholder_name">Enter Username</string>
     <string name="tt3_edit2_placeholder_name">Enter Password</string>
     <string name="displaytext">Display Text</string>
@@ -83,6 +84,7 @@
         <item>Rajkot</item>
     </string-array>
 
+    <string name="tt5_signUp">Sign Up</string>
     <string name="tt5_fname">First Name</string>
     <string name="tt5_lname">Last Name</string>
     <string name="tt5_email">Email</string>
@@ -92,6 +94,8 @@
     <string name="tt5_gender_female">Female</string>
     <string name="tt5_branch_label">Branch</string>
     <string name="tt5_branch_desc">CE / IT</string>
+    <string name="tt5_branch_ce">CE</string>
+    <string name="tt5_branch_it">IT</string>
     <string name="tt5_city">City</string>
     <string name="tt5_status_label">Status</string>
     <string name="tt5_status_desc">Active / Inactive</string>

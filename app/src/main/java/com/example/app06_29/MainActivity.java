@@ -183,4 +183,9 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(MainActivity.this, TutorialActivity4.class);
         startActivity(i);
     }
+
+    public void tutorial_5(View view) {
+        Intent i = new Intent(MainActivity.this, TutorialActivity5.class);
+        startActivity(i);
+    }
 }
