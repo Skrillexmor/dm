@@ -30,7 +30,7 @@ public class TutorialActivity5Output extends AppCompatActivity {
             String str4 = b.getString("tt5_pass_get");
             String str5 = b.getString("tt5_branch_get");
             String str6 = b.getString("tt5_gender_get");
-            //String str7 = b.getString("tt5_city_get");
+            String str7 = b.getString("tt5_city_get");
             String str8 = b.getString("tt5_status_get");
             TextView tv1 = findViewById(R.id.tt5_text1);
             TextView tv2 = findViewById(R.id.tt5_text2);
@@ -46,7 +46,7 @@ public class TutorialActivity5Output extends AppCompatActivity {
             tv4.append(str4);
             tv5.append(str5);
             tv6.append(str6);
-            //tv7.append(str7);
+            tv7.append(str7);
             tv8.append(str8);
         }
     }

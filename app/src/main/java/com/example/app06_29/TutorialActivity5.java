@@ -22,10 +22,9 @@ import com.google.android.material.switchmaterial.SwitchMaterial;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class TutorialActivity5 extends AppCompatActivity {
-    String[] tt5_cityarray = {"10th", "12th", "Bachelor", "Masters", "Phd"};
+    Spinner btn_spinner;
     RadioButton radio_btn;
     RadioGroup btn_gender;
-    Spinner btn_spinner;
     EditText fname_txt, lname_txt, email_txt, pass_txt;
     Button btn_signUp;
     MaterialCheckBox check_btn;
@@ -57,7 +56,7 @@ public class TutorialActivity5 extends AppCompatActivity {
         pass_txt = findViewById(R.id.tt5_password);
         check_btn = findViewById(R.id.materialCheckBox);
         btn_switch = findViewById(R.id.tt5_switch);
-        btn_spinner = findViewById(R.id.spinner_qua);
+        btn_spinner = findViewById(R.id.tt5_spinner_city);
 
         btn_signUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,8 +65,7 @@ public class TutorialActivity5 extends AppCompatActivity {
                 String tt5_lname = lname_txt.getText().toString();
                 String tt5_email = email_txt.getText().toString();
                 String tt5_pass = pass_txt.getText().toString();
-                final String[] city = {null};
-                String city_int = null;
+                String city = null;
                 String branch = null;
                 String gender = null;
                 String status = null;
@@ -103,22 +101,7 @@ public class TutorialActivity5 extends AppCompatActivity {
                 }
 
                 //Spinner Call
-                ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(TutorialActivity5.this, R.array.tt5_city_array, android.R.layout.simple_spinner_item);
-                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                btn_spinner.setAdapter(adapter);
-                btn_spinner.setSelection(0);
-
-                btn_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                    @Override
-                    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                        Toast.makeText(getApplicationContext(), tt5_cityarray[position], Toast.LENGTH_SHORT).show();
-                    }
-
-                    @Override
-                    public void onNothingSelected(AdapterView<?> parent) {
-                        Toast.makeText(getApplicationContext(), "Select something", Toast.LENGTH_SHORT).show();
-                    }
-                });
+                city = btn_spinner.getSelectedItem().toString();
 
                 //Check box Call
                 if (check_btn.isChecked()) {
@@ -137,6 +120,8 @@ public class TutorialActivity5 extends AppCompatActivity {
                     b.putString("tt5_branch_get", branch);
                     b.putString("tt5_gender_get", gender);
                     b.putString("tt5_status_get", status);
+                    b.putString("tt5_city_get", city);
+                    i.putExtras(b);
                     i.putExtras(b);
                     i.putExtras(b);
                     i.putExtras(b);
@@ -144,8 +129,6 @@ public class TutorialActivity5 extends AppCompatActivity {
                     i.putExtras(b);
                     i.putExtras(b);
                     startActivity(i);
-                } else {
-                    Toast.makeText(TutorialActivity5.this, "Email or Password are wrong", Toast.LENGTH_LONG).show();
                 }
             }
         });

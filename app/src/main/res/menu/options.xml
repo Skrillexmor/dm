@@ -11,13 +11,13 @@
         app:showAsAction="withText"
         android:orderInCategory="100"
         android:icon="@drawable/ic_baseline_help"
-        android:title="@string/by"/>
+        android:title="@string/help"/>
     <item
-        android:id="@+id/share"
+        android:id="@+id/Code"
         android:icon="@drawable/ic_baseline_help"
-        android:title="Share" />
+        android:title="@string/code" />
     <item
         android:id="@+id/call"
         android:icon="@drawable/ic_baseline_call"
-        android:title="Call" />
+        android:title="@string/call" />
 </menu>

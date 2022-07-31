@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">21SOEIT13014</string>
     <string name="by">By</string>
+    <string name="help">Help</string>
+    <string name="code">Code</string>
+    <string name="call">Call</string>
     <string name="name_app">Vivek Padia.</string>
     <string name="calculator">Calculator</string>
     <string name="Light">Light Mode</string>
@@ -14,6 +17,7 @@
     <string name="tt3_name">Tutorial 3</string>
     <string name="tt4_name">Tutorial 4</string>
     <string name="tt5_name">Tutorial 5</string>
+    <string name="tt6_name">Tutorial 6</string>
     <string name="tt3_edit1_placeholder_name">Enter Username</string>
     <string name="tt3_edit2_placeholder_name">Enter Password</string>
     <string name="displaytext">Display Text</string>
@@ -108,4 +112,11 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+
+    <!-- tt6 Values -->
+    <string name="tt6_login">Login</string>
+    <string name="tt6_password">Password</string>
+    <string name="tt6_email">Email</string>
+    <string name="tt6_loGout">Logout</string>
+
 </resources>

@@ -7,11 +7,14 @@ import androidx.core.content.ContextCompat;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+
 import com.example.app06_29.R.color;
+
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -41,17 +44,28 @@ public class TutorialActivity1 extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        Toast.makeText(this, item.getTitle() + " Selected", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, item.getTitle() + " Selected", Toast.LENGTH_SHORT).show();
         switch (item.getItemId()) {
             case R.id.home_menu:
                 startActivity(new Intent(this, MainActivity.class));
                 return true;
             case R.id.help:
-                //
+                String urlText = "http://21SOEIT13014.epizy.com";
+                Uri webpage = Uri.parse(urlText);
+                Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+                startActivity(intent);
                 return true;
             case R.id.call:
-                //
+                String phone = "9016694506";
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel:" + phone));
+                startActivity(callIntent);
                 return true;
+            case R.id.Code:
+                String urL = "https://github.com/Vpadia717/App06_29";
+                Uri webpge = Uri.parse(urL);
+                Intent i = new Intent(Intent.ACTION_VIEW, webpge);
+                startActivity(i);
         }
         return super.onOptionsItemSelected(item);
     }

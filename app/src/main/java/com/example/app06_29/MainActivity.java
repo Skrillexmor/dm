@@ -8,6 +8,7 @@ import androidx.core.content.ContextCompat;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -165,10 +166,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, MainActivity.class));
                 return true;
             case R.id.help:
-                //
+                String urlText = "http://21SOEIT13014.epizy.com";
+                Uri webpage = Uri.parse(urlText);
+                Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+                startActivity(intent);
                 return true;
             case R.id.call:
-                //
+                String phone = "9016694506";
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel:" + phone));
+                startActivity(callIntent);
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -186,6 +193,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void tutorial_5(View view) {
         Intent i = new Intent(MainActivity.this, TutorialActivity5.class);
+        startActivity(i);
+    }
+
+    public void tutorial_6(View view) {
+        Intent i = new Intent(MainActivity.this, TutorialActivity6.class);
         startActivity(i);
     }
 }

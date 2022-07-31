@@ -17,11 +17,19 @@
         android:theme="@style/Theme.App06_29"
         tools:targetApi="31">
         <activity
-            android:name=".TutorialActivity5Output"
+            android:name=".TutorialActivity6Output"
             android:exported="false" />
         <activity
-            android:name=".TutorialActivity5"
+            android:name=".TutorialActivity6"
             android:exported="false" />
+        <activity
+            android:name=".TutorialActivity5Output"
+            android:exported="false"
+            android:parentActivityName=".TutorialActivity5" />
+        <activity
+            android:name=".TutorialActivity5"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".TutorialActivity4Output"
             android:exported="false"

@@ -8,14 +8,15 @@
     android:background="@color/white"
     tools:context=".DarkMode">
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/open_sans_bold"
         android:text="@string/theme_app"
-        android:textSize="20sp"
         android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,27 +35,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv1">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/Call_Light"
             android:layout_width="125dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:layout_weight="1"
-            android:background="@drawable/custom_btn"
+            android:backgroundTint="@color/main"
             android:fontFamily="@font/open_sans_bold"
+            android:gravity="center"
             android:text="@string/Light"
             android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
             tools:ignore="ButtonStyle" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/Call_Dark"
             android:layout_width="125dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:layout_marginStart="10sp"
             android:layout_weight="1"
-            android:background="@drawable/custom_btn"
+            android:backgroundTint="@color/main"
             android:fontFamily="@font/open_sans_bold"
+            android:gravity="center"
             android:text="@string/Dark"
             android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
             tools:ignore="ButtonStyle" />
 
     </LinearLayout>

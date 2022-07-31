@@ -37,6 +37,9 @@ public class TutorialActivity4 extends AppCompatActivity {
         uname = findViewById(R.id.tt4_uname_label);
         pass = findViewById(R.id.tt4_pass_label);
 
+        findViewById(R.id.materialTextView8).setVisibility(View.GONE);
+        findViewById(R.id.materialTextView9).setVisibility(View.GONE);
+
         btn_login.setOnClickListener(view -> {
             String s = user_txt.getText().toString();
             String s1 = pass_txt.getText().toString();
@@ -65,13 +68,16 @@ public class TutorialActivity4 extends AppCompatActivity {
         String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
         if (val.isEmpty()) {
             uname.setError("Email cannot be empty");
+            findViewById(R.id.materialTextView8).setVisibility(View.VISIBLE);
             return false;
         } else if (val.matches(emailPattern)) {
             uname.setError(null);
+            findViewById(R.id.materialTextView8).setVisibility(View.GONE);
             uname.setErrorEnabled(false);
             return true;
         } else {
             uname.setError("Not a valid email");
+            findViewById(R.id.materialTextView8).setVisibility(View.VISIBLE);
             return false;
         }
     }
@@ -80,9 +86,11 @@ public class TutorialActivity4 extends AppCompatActivity {
         String val = pass_txt.getText().toString().trim();
         if (val.isEmpty()) {
             pass.setError("Password cannot be empty");
+            findViewById(R.id.materialTextView9).setVisibility(View.VISIBLE);
             return false;
         } else {
             pass.setError(null);
+            findViewById(R.id.materialTextView9).setVisibility(View.GONE);
             pass.setErrorEnabled(false);
             return true;
         }
